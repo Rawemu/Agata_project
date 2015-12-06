@@ -1,0 +1,154 @@
+@font-face{
+    font-family: "Raleway";
+    src: local("fonts/raleway-regular"), url("fonts/raleway-regular.woff") format("woff");
+}
+
+body{
+    font-family: "Raleway", Serif;
+}
+
+header{
+    background: black;
+}
+
+.mainWidth{
+    width: 900px;
+    margin: 0 auto;
+}
+
+#menu{
+    height: 50px;
+    width: 100%;
+    padding: 0 50px;
+    color: white;
+    font-size: 10pt;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+#menu h1{
+    line-height: 20px;
+    float: left;
+    display: inline;
+}
+
+#menu ul{
+    color: white;
+    list-style-type: none;
+}
+
+#menu ul li{
+    float: right;
+    padding: 0 20px;
+    display: inline;
+}
+
+#menu span{
+    color: green;
+}
+
+.mainImageDiv{
+    height: 400px;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,
+    rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+}
+
+.mainImageDiv ul{
+    list-style-type: none;
+}
+
+.mainImageDiv ul li{
+    height: 400px;
+    display: inline-block;
+}
+
+.imgLi{
+    line-height: 0;
+    width: 400px;
+}
+
+.textLi{
+    width: 400px;
+}
+
+.textLi h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22pt;
+}
+
+.textLi p{
+    text-align: center;
+}
+
+.textLi span{
+    color: green;
+}
+
+#seeMoreButton{
+    width: 200px;
+    margin: 0 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    color: white;
+    background: green;
+    font-size: 18pt;
+    border-radius: 10px;
+}
+
+.leftArrowLi{
+    line-height: 400px;
+    width: 10px;
+    float: left;
+}
+.rightArrowLi{
+    margin: 0 30px 0 0;
+    line-height: 400px;
+    width: 10px;
+    float: right;
+}
+
+.mainImageDiv .arrow{
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: relative;
+}
+
+#arrowLeft{
+    border-right: 40px solid green;
+}
+
+#arrowRight{
+    border-left: 40px solid green;
+}
+
+#arrowLeft:after{
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 30px solid white;
+}
+
+#arrowRight:after{
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 30px solid white;
+}
+
+
