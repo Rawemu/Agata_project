@@ -14,6 +14,7 @@ header{
 .mainWidth{
     width: 900px;
     margin: 0 auto;
+    clear: both;
 }
 
 #menu{
@@ -151,4 +152,59 @@ header{
     border-left: 30px solid white;
 }
 
+.listOfArticles{
+    list-style-type: none;
+    box-sizing: border-box;
+}
 
+.liWithArticle {
+    float: left;
+    display: block;
+    width: 30%;
+    height: 225px;
+    margin: 10px 5px;
+}
+
+.liWithArticle h1{
+    height: 50px;
+    margin-top: 50%;
+    position: relative;
+    font-size: 13pt;
+    background: rgba(255,255,255,0.5);
+}
+
+.liWithArticle span{
+    text-transform: uppercase;
+}
+
+#imgClair{
+    background-image: url("../images/box1_img.jpg");
+    background-size: cover;
+}
+
+#imgMargarita{
+    background-image: url("../images/box2_img.jpg");
+    background-size: cover;
+}
+
+.textArticle{
+    font-size: 11pt;
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+.textArticle h1{
+    height: default;
+    background: none;
+    margin-top: 0;
+}
+
+.liWithArticle h1:before{
+    content: "";
+    height: 5px;
+    width: 150px;
+    top: 20px;
+    background: green;
+    border-radius: 2px;
+    position: absolute;
+}
