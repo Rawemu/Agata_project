@@ -1,0 +1,60 @@
+@import "variables";
+
+@font-face{
+  font-family: "Raleway";
+  src: local("fonts/raleway-regular"), url("fonts/raleway-regular.woff") format("woff");
+}
+
+body{
+  font-family: "Raleway", Serif;
+}
+
+.mainWidth{
+  width: $mainWidth;
+}
+
+#menu{
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: $headerSize;
+  padding: 0 50px;
+  color: $headerTextColor;
+  font-size: $headerFontSize;
+  text-transform: uppercase;
+  line-height: $headerSize;
+  background: rgba(0,0,0,0.7);
+  h1{
+    line-height: 20px;
+    float: left;
+    display: inline;
+    span{
+      color: $headerSpanColor;
+    }
+  }
+  ul{
+    list-style-type: none;
+    li{
+      line-height: 20px;
+      float: right;
+      padding: 0 20px;
+      display: inline;
+    }
+  }
+}
+
+.mainImage{
+  height: $sectionMainImageHeight;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,
+          rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  ul{
+    padding: 0;
+    list-style-type: none;
+    li{
+      display:inline-block;
+      width: 400px;
+    }
+
+  }
+}
